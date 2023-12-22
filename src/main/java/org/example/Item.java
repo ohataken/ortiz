@@ -1,10 +1,19 @@
 package org.example;
 
+import org.optaplanner.core.api.domain.entity.PlanningEntity;
+import org.optaplanner.core.api.domain.lookup.PlanningId;
+import org.optaplanner.core.api.domain.variable.PlanningVariable;
+
+import java.util.Objects;
+
+@PlanningEntity
 public class Item {
 
+    @PlanningId
     private Integer id;
     private Integer value;
     private Integer weight;
+    @PlanningVariable(valueRangeProviderRefs = { "knapsackRange" }, nullable = true)
     private Knapsack knapsack;
 
     Item() {
