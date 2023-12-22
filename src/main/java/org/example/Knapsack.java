@@ -5,6 +5,10 @@ public class Knapsack {
     private Integer id;
     private Integer capacity;
 
+    Knapsack() {
+
+    }
+
     Knapsack(Integer id, Integer capacity) {
         this.id = id;
         this.capacity = capacity;
