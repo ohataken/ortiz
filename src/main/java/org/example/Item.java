@@ -7,6 +7,9 @@ public class Item {
     private Integer weight;
     private Knapsack knapsack;
 
+    Item() {
+    }
+
     Item(Integer id, Integer value, Integer weight) {
         this.id = id;
         this.value = value;
