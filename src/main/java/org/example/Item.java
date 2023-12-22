@@ -25,6 +25,10 @@ public class Item {
         return this.weight;
     }
 
+    public boolean belongsToKnapsack() {
+        return Objects.nonNull(this.knapsack);
+    }
+
     public Knapsack getKnapsack() {
         return this.knapsack;
     }
